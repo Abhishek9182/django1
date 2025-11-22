@@ -24,5 +24,7 @@ def calc(request):
         return HttpResponse(a/b)
     elif(op=='%'):
         return HttpResponse(a%b)
+    elif(op=='//'):
+        return HttpResponse(a//b)
     else:
         return HttpResponse('invalid operator')
